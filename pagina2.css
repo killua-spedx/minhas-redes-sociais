@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('wallpaperh.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  background-color: black;
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 200px) {
+  body {
+      background-position: center center;
+      background-attachment: scroll;
+      background-size: cover;
+  }
+}
+
+
+h1{
+    color: aliceblue;
+}
+
+ul{
+    color: aliceblue;
+}
+
+li{
+    color: aliceblue;
+}
+
+p{
+    color: aliceblue;
+}
+
+body{
+    margin-top: 9px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+
+.btn-donate {
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: hsla(270, 100%, 70%, 1); /* Roxo Neon mais claro */
+  --btn-bg-2: hsla(285, 100%, 50%, 1); /* Roxo Neon mais escuro */
+  --btn-bg-color: hsla(360, 100%, 100%, 1);
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 0.9em 1.4em;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--size, 1rem);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow: 0px 0px 20px rgba(175, 0, 255, 0.5), 0px 5px 5px -1px rgba(155, 0, 245, 0.25), inset 4px 4px 8px rgba(200, 0, 255, 0.5), inset -4px -4px 8px rgba(125, 0, 230, 0.35);
+  margin-top: 50px;
+  margin-left: -120px;
+}
+
+.btn-donate:hover {
+  background-position: right top;
+}
+
+.btn-donate:is(:focus, :focus-visible, :active) {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-donate {
+    transition: linear;
+  }
+}
+
+
+  
